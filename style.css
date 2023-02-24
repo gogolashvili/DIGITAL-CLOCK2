@@ -4,4 +4,14 @@
   background-image: url("./photo/train.jpg");
   background-position: center;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  gap: 30px;
+}
+h1 {
+  font-size: 50px;
+  color: white;
 }
