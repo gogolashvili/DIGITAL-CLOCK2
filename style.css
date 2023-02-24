@@ -9,9 +9,43 @@
   flex-direction: column;
   align-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 50px;
 }
 h1 {
-  font-size: 50px;
+  font-size: 40px;
   color: white;
+  font-family: "Gajraj One", cursive;
+  text-shadow: 3px 3px #bf2654;
+  opacity: 0.5;
+}
+.hours {
+  width: 180px;
+  height: 150px;
+  background-color: white;
+  opacity: 0.3;
+}
+.minutes {
+  width: 180px;
+  height: 150px;
+  background-color: white;
+  opacity: 0.3;
+}
+.seconds {
+  width: 180px;
+  height: 150px;
+  background-color: white;
+  opacity: 0.3;
+}
+section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+button {
+  width: 180px;
+  height: 50px;
+  font-weight: 900;
+  font-size: 20px;
+  opacity: 0.5;
+  color: rgb(43, 43, 159);
 }
