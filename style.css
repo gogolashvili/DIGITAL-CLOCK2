@@ -15,7 +15,7 @@ h1 {
   font-size: 40px;
   color: rgb(255, 221, 221);
   font-family: "Gajraj One", cursive;
-  text-shadow: 3px 3px #bf2654;
+  text-shadow: 2px 2px #bf2654;
   opacity: 0.7;
   margin-left: -90px;
 }
@@ -74,21 +74,25 @@ section {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   font-family: "Gajraj One", cursive;
+  text-shadow: 2px 2px #bf2654;
 }
 .saati {
   font-size: 70px;
   font-family: "Gajraj One", cursive;
   color: rgb(24, 5, 61);
+  text-shadow: 2px 2px #bf2654;
 }
 .wuti {
   font-size: 70px;
   font-family: "Gajraj One", cursive;
   color: rgb(24, 5, 61);
+  text-shadow: 2px 2px #bf2654;
 }
 .wami {
   font-size: 70px;
   font-family: "Gajraj One", cursive;
   color: rgb(24, 5, 61);
+  text-shadow: 2px 2px #bf2654;
 }
 .ampm {
   width: 80px;
@@ -107,4 +111,5 @@ section {
   opacity: 0.7;
   font-size: 30px;
   font-family: "Gajraj One", cursive;
+  text-shadow: 2px 2px #bf2654;
 }
