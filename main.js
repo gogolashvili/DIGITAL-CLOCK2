@@ -4,7 +4,7 @@ let second = document.querySelector(".wami");
 let time = document.querySelector(".am");
 
 let saati = 0;
-let wuti = 50;
+let wuti = 0;
 let wami = 0;
 let dro = "AM";
 
@@ -23,6 +23,7 @@ let interval = setInterval(function () {
   if (wami >= 60) {
     wami = 0;
     wuti++;
+    second.innerHTML = "00";
     if (wuti < 10) {
       minute.innerHTML = "0" + wuti;
     } else {
@@ -46,4 +47,4 @@ let interval = setInterval(function () {
   if (saati >= 0 && saati < 12) {
     dro = "AM";
   }
-}, 100);
+}, 1000);
