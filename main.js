@@ -1,20 +1,39 @@
-let saati = 0;
-let wuti = 0;
-let wami = 0;
-let time = "am";
+let hour = document.querySelector(".saati");
+let minute = document.querySelector(".wuti");
+let second = document.querySelector(".wami");
+let time = document.querySelector(".am");
 
-p.innerHTML = saati + " სთ :" + " " + wuti + " წთ :" + wami + " წმ " + time;
+let saati = 0;
+let wuti = 50;
+let wami = 0;
+let dro = "AM";
 
 let interval = setInterval(function () {
-  p.innerHTML = saati + " სთ :" + " " + wuti + " წთ :" + wami + " წმ " + time;
+  hour.innerHTML = saati;
+
+  time.innerHTML = dro;
+
   wami++;
+  if (wami < 10) {
+    wami = "0" + wami;
+    second.innerHTML = wami;
+  }
+  second.innerHTML = wami;
+
   if (wami >= 60) {
     wami = 0;
     wuti++;
+    if (wuti < 10) {
+      minute.innerHTML = "0" + wuti;
+    } else {
+      minute.innerHTML = wuti;
+    }
   }
+
   if (wuti >= 60) {
     wuti = 0;
     saati++;
+    minute.innerHTML = "00";
   }
   if (saati >= 24) {
     saati = 0;
@@ -22,9 +41,9 @@ let interval = setInterval(function () {
     wami = 0;
   }
   if (saati >= 12 && saati < 24) {
-    time = "pm";
+    dro = "PM";
   }
   if (saati >= 0 && saati < 12) {
-    time = "am";
+    dro = "AM";
   }
-}, 1000);
+}, 100);

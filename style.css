@@ -17,6 +17,7 @@ h1 {
   font-family: "Gajraj One", cursive;
   text-shadow: 3px 3px #bf2654;
   opacity: 0.5;
+  margin-left: -100px;
 }
 .hours {
   width: 180px;
@@ -63,9 +64,9 @@ section {
   width: 180px;
   height: 50px;
   font-size: 20px;
-  opacity: 0.6;
-  color: rgb(35, 35, 142);
-  background-color: grey;
+  opacity: 0.5;
+  color: rgb(255, 255, 255);
+  background-color: rgb(84, 15, 213);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,7 +90,7 @@ section {
 .ampm {
   width: 80px;
   height: 50px;
-  background-color: rgb(35, 35, 142);
+  background-color: rgb(84, 15, 213);
   opacity: 0.6;
   margin-top: 148px;
   display: flex;
