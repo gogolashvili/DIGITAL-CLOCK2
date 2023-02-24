@@ -25,6 +25,10 @@ h1 {
   opacity: 0.3;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 .minutes {
   width: 180px;
@@ -33,6 +37,10 @@ h1 {
   opacity: 0.3;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 .seconds {
   width: 180px;
@@ -41,6 +49,10 @@ h1 {
   opacity: 0.3;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 section {
   display: flex;
@@ -50,7 +62,6 @@ section {
 .clock {
   width: 180px;
   height: 50px;
-  font-weight: 900;
   font-size: 20px;
   opacity: 0.6;
   color: rgb(35, 35, 142);
@@ -61,4 +72,35 @@ section {
   align-content: center;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
+  font-family: "Gajraj One", cursive;
+}
+.saati {
+  font-size: 70px;
+  font-family: "Gajraj One", cursive;
+}
+.wuti {
+  font-size: 70px;
+  font-family: "Gajraj One", cursive;
+}
+.wami {
+  font-size: 70px;
+  font-family: "Gajraj One", cursive;
+}
+.ampm {
+  width: 80px;
+  height: 50px;
+  background-color: rgb(35, 35, 142);
+  opacity: 0.6;
+  margin-top: 148px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border-radius: 15px;
+}
+.am {
+  color: white;
+  opacity: 0.7;
+  font-size: 30px;
+  font-family: "Gajraj One", cursive;
 }
