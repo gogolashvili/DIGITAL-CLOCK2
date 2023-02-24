@@ -9,11 +9,10 @@ let wami = 0;
 let dro = "AM";
 
 let interval = setInterval(function () {
-  hour.innerHTML = saati;
-
   time.innerHTML = dro;
 
   wami++;
+
   if (wami < 10) {
     wami = "0" + wami;
     second.innerHTML = wami;
@@ -24,6 +23,7 @@ let interval = setInterval(function () {
     wami = 0;
     wuti++;
     second.innerHTML = "00";
+
     if (wuti < 10) {
       minute.innerHTML = "0" + wuti;
     } else {
@@ -36,11 +36,19 @@ let interval = setInterval(function () {
     saati++;
     minute.innerHTML = "00";
   }
+
+  if (saati < 10) {
+    hour.innerHTML = "0" + saati;
+  } else {
+    hour.innerHTML = saati;
+  }
+
   if (saati >= 24) {
     saati = 0;
     wuti = 0;
     wami = 0;
   }
+
   if (saati >= 12 && saati < 24) {
     dro = "PM";
   }
