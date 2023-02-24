@@ -23,29 +23,42 @@ h1 {
   height: 150px;
   background-color: white;
   opacity: 0.3;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 .minutes {
   width: 180px;
   height: 150px;
   background-color: white;
   opacity: 0.3;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 .seconds {
   width: 180px;
   height: 150px;
   background-color: white;
   opacity: 0.3;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 section {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
-button {
+.clock {
   width: 180px;
   height: 50px;
   font-weight: 900;
   font-size: 20px;
-  opacity: 0.5;
-  color: rgb(43, 43, 159);
+  opacity: 0.6;
+  color: rgb(35, 35, 142);
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
