@@ -3,14 +3,17 @@ let minute = document.querySelector(".wuti");
 let second = document.querySelector(".wami");
 let time = document.querySelector(".am");
 
-let saati = 0;
-let wuti = 0;
-let wami = 0;
-let dro = "AM";
+let saati = new Date().getHours();
+let wuti = new Date().getMinutes();
+let wami = new Date().getSeconds();
+let dro = saati >= 12 ? "PM" : "AM";
+
+hour.innerHTML = saati < 10 ? "0" + saati : saati;
+minute.innerHTML = wuti < 10 ? "0" + wuti : wuti;
+second.innerHTML = wami < 10 ? "0" + wami : wami;
+time.innerHTML = dro;
 
 let interval = setInterval(function () {
-  time.innerHTML = dro;
-
   wami++;
 
   if (wami < 10) {
@@ -55,4 +58,5 @@ let interval = setInterval(function () {
   if (saati >= 0 && saati < 12) {
     dro = "AM";
   }
+  time.innerHTML = dro;
 }, 1000);
